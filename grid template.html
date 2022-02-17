@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+.container{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas:
+    'navbar navbar navbar navbar'
+    'rside section section aside'
+    'bottom bottom bottom bottom';
+
+
+}
+.item{
+    background-color: aqua;
+    border: 3px solid orange;
+}
+.item2{
+    background-color: aqua;
+    border: 3px solid orange;
+}
+.item3{
+    background-color: aqua;
+    border: 3px solid orange;
+}
+
+#navbar{
+   grid-area: navbar;
+}
+#section{
+   grid-area: section;
+}
+#aside{
+grid-area: aside;
+}
+#bottom{
+grid-area: bottom;
+}
+
+#rside{
+    grid-area: rside;
+}
+
+@media only screen and (min-width:500px) and (max-width:850px){
+    .container{
+        display: grid;
+grid-template-areas:
+    'navbar navbar navbar navbar'
+    'rside rside rside rside'
+    'section section section'
+    'aside aside aside aside'
+    'bottom bottom bottom bottom';
+    
+
+    }
+}
+
+@media (min-width:300px) and (max-width:500px){
+    .container{
+        grid-template-areas:
+    'navbar '
+    'section'
+    'bottom'
+    'rside'
+    'aside';
+
+    }
+}
+
+
+
+
+</style>
+
+
+
+</head>
+<body>
+<div class="container">
+    <div id="navbar" class="item"></div>
+    <div id="section" class="item"></div> 
+    <div id="aside" class="item"></div> 
+    <div id="bottom" class="item"></div>
+    <div id="rside" class="item"></div>
+
+<div id="navbar" class="item">item-1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, magnam cumque iste aspernatur debitis repellendus culpa, autem fuga sapiente perspiciatis eos hic recusandae commodi? Esse earum error a eum facilis.</div>
+
+<div id="section" class="item">item-3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nemo iure a veritatis repellendus suscipit ea ducimus voluptatum. Inventore, ipsa sunt! Quidem dicta nisi ipsa voluptatem ipsam, similique adipisci quod!</div>
+<div id="aside" class="item">item-3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla necessitatibus eaque mollitia voluptates iure at ipsum laudantium nam harum beatae? Error, facere sed velit tempora atque autem libero itaque ea.</div>
+
+<div id="bottom" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptate iure officia quasi veritatis rem molestiae repellat alias, perspiciatis asperiores pariatur consequatur tempora recusandae nam facere ducimus. Nam, provident eius!</div>
+
+<div id="rside" class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident quidem omnis mollitia maiores expedita excepturi aspernatur tenetur necessitatibus numquam possimus amet, debitis neque est veritatis, voluptatibus quod voluptates magnam. Quia!</div>
+
+
+
+
+
+
+
+</div>
+    
+
+
+
+
+</body>
+</html>
